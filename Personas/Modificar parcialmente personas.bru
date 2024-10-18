@@ -1,0 +1,21 @@
+meta {
+  name: Modificar parcialmente personas
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:3000/personas/3
+  body: json
+  auth: none
+}
+
+body:json {
+  
+      {
+        "id": "3",
+        "name": "Britney",
+        "surname": "Everheart",
+        "group": "2"
+      }
+}

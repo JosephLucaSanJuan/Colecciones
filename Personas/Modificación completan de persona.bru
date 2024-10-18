@@ -1,0 +1,21 @@
+meta {
+  name: Modificación completan de persona
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3000/personas/2
+  body: json
+  auth: none
+}
+
+body:json {
+  
+      {
+        "id": "2",
+        "name": "Cristina",
+        "surname": "García Pérez",
+        "grupo": "1"
+      }
+}

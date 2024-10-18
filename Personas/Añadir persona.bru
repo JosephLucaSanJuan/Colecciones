@@ -1,0 +1,19 @@
+meta {
+  name: Añadir persona
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/personas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":3,
+    "name":"Britney",
+    "surname":"Everheart"
+  }
+}
